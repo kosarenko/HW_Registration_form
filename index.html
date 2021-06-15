@@ -4,43 +4,77 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .all-page {
+        body {
+            margin: 0;
+        }
+        .registration-page-wrap {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: rebeccapurple;
-            width: 1890px;
-            height: 920px;
+            width: 100%;
+            height: 100vh;
         }
-
-        .container {
+        .registration-page {
             display: flex;
-            justify-content: space-around;
+            justify-content:space-around;
             align-items: center;
             background-color: deepskyblue;
-            width: 500px;
-            height: 700px;
+            width: 400px;
+            height: 480px;
             color: white;
+        }
+        .registration-form {
 
         }
+        .form-input {
+            width: calc(100% - 2px);
+            padding: 0;
+            border: 1px solid gray;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            height: 25px;
+            font-weight: bold;
+        }
+        .form-submit-btn {
+            width: 300px;
+            height: 25px;
+        }
+        label{
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
-<div class="all-page">
-    <div class="container">
-
-        <form>
-            <label for="YourName">Your name:</label><br>
-            <input type="text" id="YourName" name="yourName" value="Alex"><br>
-            <label for="YourEmail">Your email</label><br>
-            <input type="email" id="YourEmail" name="your Email" value="kosarenko90@gmail.com"><br>
-            <label for="UserName">username</label><br>
-            <input type="text" id="UserName" name="username" value="AlexKo"><br>
+<div class="registration-page-wrap">
+    <div class="registration-page">
+        <form class="registration-form">
+            <label for="YourName">Your name:</label>
+            <br/>
+            <input class="form-input" type="text" id="YourName" name="yourName" value="Alex">
+            <br/>
+            <label for="YourEmail">Your email</label>
+            <br/>
+            <input class="form-input" type="email" id="YourEmail" name="your Email" value="kosarenko90@gmail.com">
+            <br/>
+            <label for="UserName">username</label>
+            <br/>
+            <input class="form-input" type="text" id="UserName" name="username" value="AlexKo">
+            <br/>
             <label for="Password">Password</label>
-            <input type="password" id="Password" name="password" value="12345"><br>
-            <label for="PasswordСonfirm">Confirm Password</label><br>
-            <input type="password" id="PasswordСonfirm" name="password" value="12345"><br>
-            <input type="submit" id="submit" name="submit" value="Register"><br>
+            <br/>
+            <input class="form-input" type="password" id="Password" name="password" value="12345">
+            <br/>
+            <label for="PasswordСonfirm">Confirm Password</label>
+            <br/>
+            <input class="form-input" type="password" id="PasswordСonfirm" name="password" value="12345">
+            <br/>
+            <label for="submit"></label>
+            <br/>
+            <input class="form-submit-btn" type="submit" id="submit" name="submit" value="Register">
+            <br/>
         </form>
     </div>
 </div>
